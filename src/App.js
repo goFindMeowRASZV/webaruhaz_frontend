@@ -16,6 +16,7 @@ function App() {
         <article className='col-lg-9'>
           <h3>Termékek</h3>
           <Termekek/>
+        {/*   <Tablazat/> */}
         </article>
       </main>
       

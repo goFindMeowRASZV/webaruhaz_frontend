@@ -1,5 +1,6 @@
 .App {
   text-align: left;
+ 
 }
 
 .App-logo {
@@ -34,8 +35,8 @@ article>div{
 .rounded-pill{
   width: 60px;
   align-items: left;
+  padding-left: 0;
   margin: auto;
-  padding-left: 0%;
 }
 .card-img-top{
   size: 100%;
