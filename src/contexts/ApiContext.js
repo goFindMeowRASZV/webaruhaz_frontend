@@ -33,8 +33,7 @@ export const ApiProvider = ({ children }) => {
 
   /* useEffect hook segítségével hívjuk meg az aszinkron get kéréseket aszinkron hívások esetén ne végtelen sokszor fusson le a kérés, hanem csak akkor, ha a függőségi listában változás türténik*/
   useEffect(() => {
-    getAdat("/products", setTermekLista);
-    getAdat("/products/categories", setKattLista);
+    getAdat("/api/products", setTermekLista);
   }, []);
 
   return (
