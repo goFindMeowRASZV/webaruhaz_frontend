@@ -1,5 +1,6 @@
 
 import './App.css';
+import Tablazat from './Components/Tablazat';
 import Termekek from './Components/Termekek';
 
 function App() {

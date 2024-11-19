@@ -16,10 +16,10 @@
 .App-header {
   align-items: left;
   justify-content: left;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
   background-color: black;
   color: white;
-  height: 80px;
+  height: 60px;
 }
 .logo{
   align-items: left;
@@ -32,10 +32,14 @@ article>div{
   grid-template-columns: 1fr 1fr 1fr;
 }
 .rounded-pill{
-  width: 40px;
+  width: 60px;
+  align-items: left;
+  margin: auto;
+  padding-left: 0%;
 }
 .card-img-top{
-  size: 60%;
+  size: 100%;
+
 }
 .row{
   background-color: white;
@@ -43,6 +47,10 @@ article>div{
 .App-link {
   color: #61dafb;
 }
+.table{
+  width: 100%;
+}
+
 
 @keyframes App-logo-spin {
   from {
