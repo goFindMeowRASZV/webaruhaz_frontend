@@ -1,5 +1,6 @@
 .App {
   text-align: left;
+ 
 }
 
 .App-logo {
@@ -19,7 +20,7 @@
   font-size: calc(10px + 2vmin);
   background-color: black;
   color: white;
-  height: 80px;
+  height: 60px;
 }
 .logo{
   align-items: left;
@@ -32,7 +33,10 @@ article>div{
   grid-template-columns: 1fr 1fr 1fr;
 }
 .rounded-pill{
-  width: 40px;
+  width: 60px;
+  align-items: left;
+  padding-left: 0;
+  margin: auto;
 }
 .card-img-top{
   size: 60%;

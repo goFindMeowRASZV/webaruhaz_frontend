@@ -1,5 +1,6 @@
 
 import './App.css';
+import Tablazat from './Components/Tablazat';
 import Termekek from './Components/Termekek';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <article className='col-lg-9'>
           <h3>Termékek</h3>
           <Termekek/>
+        {/*   <Tablazat/> */}
         </article>
       </main>
       
