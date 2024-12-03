@@ -1,6 +1,6 @@
 import React from "react"
-import Termekek from "../components/Termekek"
-import Kosar from "../components/Kosar"
+import Kosar from "../Components/public/Kosar"
+import Termekek from "../Components/Termekek"
 
 function Public(){
     return(
@@ -13,7 +13,7 @@ function Public(){
           <h3>Termékek</h3>
           <Termekek/>
         </article>
-      </main>
+    </main>
     )
 }
 export default Public

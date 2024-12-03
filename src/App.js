@@ -1,24 +1,25 @@
 
 import './App.css';
-import Tablazat from './Components/Tablazat';
-import Termekek from './Components/Termekek';
+import Public from "./pages/Public";
+import Admin from "./pages/Admin";
+import Layout from "./pages/Layout";
+import NoPage from "./pages/NoPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-          <div className="logo">
-            <img src='kepek/logo.png' alt="logo" className="rounded-pill"/>
-            <h1>Macska webáruház</h1>
-          </div>
-      </header>
-      <main className='row'>
-        <article className='col-lg-9'>
-          <h3>Termékek</h3>
-          <Termekek/>
-        {/*   <Tablazat/> */}
-        </article>
-      </main>
+      <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route index element={<Public />} />
+                        <Route path="admin" element={<Admin />} />
+                        <Route path="*" element={<NoPage />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+
       
     </div>
   );

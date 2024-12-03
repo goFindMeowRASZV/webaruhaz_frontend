@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { KosarContext } from "../contexts/KosarContext";
+import { KosarContext } from "../../contexts/KosarContext";
 
 function Termek(props) {
   const { kosarba } = useContext(KosarContext);
@@ -10,7 +10,7 @@ function Termek(props) {
         <div className="card-body">
             <h4 className="card-title">{props.adat.nev}</h4>
             <p className="card-text">{props.adat.katgoria}</p>
-            <a href="#" className="btn btn-dark" onClick={kosarba(props.adat)}>Kosárba</a>
+            <a href="#" className="btn btn-dark" onClick={()=>{kosarba(props.adat)}}>Kosárba</a>
             <h4 className="card-title">{props.adat.ar}€</h4>
         </div>
     </div>

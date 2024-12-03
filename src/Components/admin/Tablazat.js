@@ -1,13 +1,17 @@
 import React, { useContext, useState } from "react"
-import { ApiContext } from "../contexts/ApiContext"
+import { ApiContext } from "../../contexts/ApiContext"
 import TablazatSor from "./TablazatSor"
+import Urlap from "./Urlap";
 
 function Tablazat(){
   const { termekLista } = useContext(ApiContext);
     return(
         <div>
+          <div>
+            <Urlap/>
+          </div>
           <table className="table">
-        <thead>
+            <thead>
                 <tr>
                   <th scope="col"></th>
                   <th scope="col">Név</th>
@@ -24,7 +28,7 @@ function Tablazat(){
                     );
                   })};
             </tbody>
-            </table>
+          </table>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 
-import { ApiContext } from '../contexts/ApiContext.js'
-import Termek from './public/Termek.js'
+import { ApiContext } from '../../contexts/ApiContext.js'
+import Termek from './Termek.js'
 
 function Termekek(props) {
     const {termekLista}=useContext(ApiContext)
